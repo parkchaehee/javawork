@@ -1,0 +1,5 @@
+package inheritance.airplan;
+
+public class SuperSonicAirPlane {
+
+}

@@ -1,0 +1,24 @@
+package kr.or.iei.run;
+
+import kr.or.iei.model.User;
+
+public class UserTesr2 {
+
+	public static void main(String[] args) {
+		//매개변수가 있는 생성자로 user1 인스턴스 생성
+		/*User user1 = new User("sky123","12345","박채희");
+		
+		System.out.println("아이디: " + user1.getId());
+		System.out.println("비밀번호: " + user1.getPwd());
+		System.out.println("이름: " + user1.getName());*/
+		
+		//배열객체
+		String[] carts = new String[4];
+		carts[0] = "콩나물";
+		carts[1] = "콩나물1";
+		carts[2] = "콩나물2";
+		carts[3] = "콩나물3";
+
+	}
+
+}

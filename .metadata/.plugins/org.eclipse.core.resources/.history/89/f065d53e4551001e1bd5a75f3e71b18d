@@ -1,0 +1,10 @@
+package inheritance.q4;
+
+public class prcticeP278b extend Employee{
+	private String skillset;
+	public String getSkillSet() {
+		return skillset;
+	}
+	public void setSkillSet(Strin skillset)
+	this.skillset = skillset;
+}
