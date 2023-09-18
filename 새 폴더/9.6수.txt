@@ -1,0 +1,129 @@
+C:\ -루트(root)
+c:\javaworks
+Java
+- 변수 : 메모리의 특정 공간을 할당(마련) -> 문자, 숫자, 불리언
+- 자료형
+int num = 10;        //정수형 num에 10을 저장(대입)
+double unit = 3.14; //실수형 unit에 3.14대입
+char ch ='k';          //문자형 ch변수에 'k'를 저장
+String str = "company"; //문자열 str 변수에  "company"
+
+jak11버전에 이미 제공됨
+Run (실행)
+*.java(소스) ---> *.class(바이트파일-중간단계기계어) ----> 기계어(0000,11)실행
+             (javac.exe-컴파일러)                 (.java-메모리에 적재)
+
+10진수 - 
+2진수  - 숫자 앞에 0b
+16진수 - 숫자 앞에 0x
+
+-----------------------------------------------------------------어제복습
+
+변수를 선언과 값을 저장(초기화)
+operator -> Exchange.java
+
+입력 >Scanner(inport)  <외부에서 가져옴/입력에 필요한 외부 클래스 필요>
+출력 >System(출력에필요한클래스) <내장>
+
+형변환(Type Conversion)
+left = right
+왼쪽이 자료형이 크고 오른쪽이 작으면 자동
+왼쪽이 자료형이 작고 오른쪽이 크면 강제 변환
+-----------------------------------------------------------------
+ch02
+
+프로그램의 알고리즘
+-조건문 - if문(비교, 논리연산자)
+             if문     - 단독
+             if~else구문
+             다중if ~else  if~else구문
+ if(비교문){//비교문이 true이면 실행문1이 작동함
+            실행문1;
+}else{//false이면 실행문2 작동
+     실행문2;
+}
+-반복문 - while문, for문
+   i = 0; //초기값
+   while(종료조건){
+      실행문1;
+      증감값;(++)
+   }
+
+1부터 10까지 연속 출력
+123 ...10
+
+  반복조건문
+while(true) ->계속출력
+=======
+while(true){ 
+if(){
+break;
+     }
+}             ->출력 종료
+
+윤년을 판정하는 프로그램
+LeafYear
+2/28
+2/29 - 4년1번
+공전 - 365일 6시간
+
+학점 계산 프로그램
+A (90점 이상)
+B (80점 이상)
+C (70점 이상)
+D (60점 이상)
+E (50점 이상)
+F (50점 미만)
+\\\\\\\\
+1. Scanner sc = new Scanner(System.in);
+
+
+-----------------------------------------------------------------
+논리 연산자 -&&(그리고), ||(또는), !(아니다)
+
+=================================================
+*함수 해석
+퍼블릭 접근이 가능하다
+스트링?
+
+Data(기본형) - 문자, 숫자, 불리언
+Class(참조형) - 객체
+
+public class 
+
+Date   today
+스캐너 객체
+
+문제 //컴파일, JRE, JDK
+
+sysout + ctrl+스페이스바 = System.out.println();
+
+문자 
+String customer = sc.nextLine(); //사용자 - 이름 입력
+
+이름바꾸기
+우클릭 -> Refactor -> Rename
+
+=================================================
+
+System.out.println("성함을 입력하시오");
+Scanner sc = new Scanner(System.in);
+String customer = sc.nextLine();
+
+System.out.println
+int price = sc.nextInt();
+double bonusRatio = 0.02;
+int bonusPoint = 0;
+bonusPoint = (int)(price * bonusRatio);
+=================================================
+에러
+중괄호 개수
+while{}뒤 sc.close(); 위치오류
+
+
+
+
+
+
+
+

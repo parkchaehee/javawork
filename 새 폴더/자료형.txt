@@ -1,0 +1,5 @@
+정수형, 문자형, 실수형, 논리형
+byte                        boolean
+short    char
+int                 float
+long              double

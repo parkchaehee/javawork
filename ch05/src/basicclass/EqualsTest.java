@@ -3,7 +3,8 @@ package basicclass;
 public class EqualsTest {
 
 	public static void main(String[] args) {
-		String name1 = new String("우영우");
+		//String name = "우영우";            //스택 영역 저장
+		String name1 = new String("우영우"); //힙 메모리 저장
 		String name2 = new String("우영우");
 		
 		//인스턴스 메모리 주소비교
@@ -20,9 +21,13 @@ public class EqualsTest {
 		Book book2 = new Book(100, "개미");
 		System.out.println(book1 == book2);      //주소비교-false
 		System.out.println(book1.equals(book2));//문자열비교-false=>true->재정의필요
+		//instanceof필요//문자열이 같은데 false
 		
+		//book 인스턴스의 물리적 주소
+		System.out.println(System.identityHashCode(book1));
+		System.out.println(System.identityHashCode(book2));
 		
-
+		//논리적 주소 일치시키는 작업 필요 - hashCode() : Object 클래스가 제공하고있음
 	}
 
 }

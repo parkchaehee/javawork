@@ -1,0 +1,97 @@
+접근 제어자
+public - 외부클래스(패키지) 어디서나 접근가능
+private - 같은 클래스 내부, 같은 패키지 불가
+protected - 같은 패키지 내부, 상속관계클래스 가능
+default
+
+상속관계
+부모 클래스 - 상위클래스
+자식 클래스 - 하위클래스
+
+- 메서드 재정의(오버라이딩overriding)
+메서드 기능이 다를때 변경해서 사용하는것 
+ 우클릭-source>override/impl~
+
+- 메서드 오버로딩(over loading)
+메서드의 이름이 같고 매개변수가 다를때
+
+상속 관계 - 다형성(다양한 형태로 결과나옴)
+형 변환 - 자동형변환, 강제형변환
+
+
+
+
+모든 클래스의 부모 Object 클래스
+String 클래스
+String.java
+toString() - Object의 메서드로 재정의하면 문자열 정보 출력할수있음
+
+다형성(polymorphism)
+하나의 타입에 대입되는 객체에 따라서 실행결과가 다양한 
+형태로 나오는 성질을 말한다
+
+Wrapper 클래스
+- 기본 자료형처럼 사용할수있는 클래스
+- 기본자료형을 감쌌다는 의미로 wrapper클래스 라고함
+- Integer, Boolean, Double, C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+-사용용도(객체를 매개변수로 받는경우, 반환값이 객체인경우)
+public void setValue(Integer i){}
+public Integer getValue(){return ;}
+
+- Integerl.parselnt("문자")
+- Integer.valueOf("문자"or숫자)
+
+- 은행 업무
+1. 계좌생성 - Account 클래스
+2. 입출금
+3. 계좌검색
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================

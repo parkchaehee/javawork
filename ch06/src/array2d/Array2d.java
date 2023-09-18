@@ -19,11 +19,6 @@ public class Array2d {
 		arr[1][1] = 5;
 		arr[1][2] = 6;
 		
-		int[][] arr2 = {{1, 2, 3},{4, 5, 6}};
-		
-		//특정한 요소를 인덱싱
-		System.out.println(arr2[1][1]);
-
 		//전체출력
 		for(int i=0; i<arr.length; i++) {
 			for(int j=0; j<arr[i].length; j++) {
@@ -31,6 +26,13 @@ public class Array2d {
 			}
 			System.out.println(); //줄바꿈
 		}
+		
+		int[][] arr2 = {{1, 2, 3},{4, 5, 6}};
+		
+		//특정한 요소를 인덱싱
+		System.out.println(arr2[1][1]);
+
+
 		//전체출력
 		for(int i=0; i<arr2.length; i++) {
 			for(int j=0; j<arr2[i].length; j++) {

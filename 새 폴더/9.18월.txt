@@ -1,0 +1,110 @@
+배열 - 대용량 자료
+int[] = 10;
+
+1차원 배열 - 객체(인스턴스) --new하면 객체 생성
+int[]numbers = new int[5];
+numbers[0] = 11;
+numbers[1] = 21;
+
+Book[] books = new Book[5]
+
+book클래스의 인스턴스 생성(book1)
+Book book1 = new Book;
+
+2차원배열
+int[][] arr = new int[2][3];
+
+
+알파벳 1차원
+2차원
+--------------------------------------------
+상속과 다형성
+다형성 - 하나의 타입에 대입되는 객체에 따라서
+실행결과가 다양한 형태로 나오는 성질
+
+형변환 이루어짐 - 자동형변환, 강제형변환
+1. 부모타입 = 자식타입(자동)
+2. 자식타입 = (자식)부모타입
+
+문자열 일치(시킬때) - 논리적 주소 일치
+1. hashCode() 재정의
+2. equals() 재정의(문자비교)
+
+객체가 동등 객체인지 비교할때
+먼저 hashCode()가 일치해야하고, 그 다음
+equals() 리턴값이 true여야한다
+-----------------------------------------------
+배열(Array) -> ArrayList(), Map(key, value)
+
+기본 클래스 - Object에서 제공되는 함수(메서드)
+
+java.lang패키지
+Object, String, System
+
+java.util 패키지 - import 필요
+Scanner, ArrayList
+
+java document
+
+제네릭 표기(일반화 - Generic)
+ArrayList<E>//E->엘리먼트
+10개를 저장할 리스트 생성 
+ArrayList<Integer or String or Book> animalList = new ArrayList<>();
+           <자료형>을 상황에 따라 동적으로 정할수있음
+*함수사용
+자료추가 - add
+리스트의 크기 - size()
+가져오기 - get()
+설정하기 - set()
+삭제하기 - remove()
+
+배열 - number.length;
+어레이리스트 - number.size()
+
+ArrayList 클래스
+- 배열의 단점을 개선한 자료 구조
+
+Dog, Customer, Student
+
+고객관리 - ArrayList
+일반고객 - 2명
+골드 - 2명
+vip - 1명
+
+교재 279쪽 5번 풀기
+
+클래스 - 상속
+
+부모클래스x
+class abstract Animal{
+메서드(숨을 쉰다)
+void move(){
+  print("움직인다") //구체 메서드
+}
+//추상(abstract) 메서드(선언부는 있고, 구현부는 없음(블럭이없음))
+void abstract sound(); 
+}
+자식클래스
+메서드
+
+extends - 상속
+final - 
+static - 
+
+abstract - 추상메서드
+
+Shop2
+역세권 매장입니다.
+==================
+깃허브올리기
+cd c:/javaworks
+
+
+-----------------------------
+git status (깃상태)
+
+
+
+
+
+
