@@ -12,7 +12,6 @@ public class Student { //클래스안에 변수가 쓰이면 생략//main안에�
 		this.studentName = studentName;
 		subjects = new Subject[10]; //과목을 저장할 배열10개저장
 	}
-	
 	//과목추가
 	public void addSubject(String name, int score) {
 		//과목 객체를 생성해서 값(과목이름, 점수)을 저장
@@ -46,6 +45,4 @@ public class Student { //클래스안에 변수가 쓰이면 생략//main안에�
 		average = (double)total / count; //<-length 수정필요
 		System.out.printf("과목의 총점은 %d점 이고, 평균은 %.1f입니다.\n", total, average);
 	}
-	
-
 }
