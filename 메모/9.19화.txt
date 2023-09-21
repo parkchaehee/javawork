@@ -85,7 +85,8 @@ git push
 
 
 
-
+cd gittest2
+git pull
 
 
 
