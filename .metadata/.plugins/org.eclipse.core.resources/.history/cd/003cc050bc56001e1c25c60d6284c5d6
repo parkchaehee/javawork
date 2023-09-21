@@ -1,0 +1,22 @@
+package interfaceex.sort;
+
+public class HeapSort implements Sort{
+
+	@Override
+	public void ascendning(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void descending(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void description() {
+		// TODO Auto-generated method stub
+		
+	}
+}

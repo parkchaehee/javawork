@@ -1,0 +1,20 @@
+package array2d;
+
+public class ArrayAlphabet1 {
+
+	public static void main(String[] args) {
+		// 대문자 26자를 배열에 저장
+		// for문 출력
+		char c = 'A';
+		System.out.println(c);
+		System.out.println((int)c);
+		
+		char c2 = 66;
+		
+		for(char ch=65; ch<=90; ch++) { //65아스키코드값
+			System.out.print(ch + " ");
+		}
+
+	}
+
+}

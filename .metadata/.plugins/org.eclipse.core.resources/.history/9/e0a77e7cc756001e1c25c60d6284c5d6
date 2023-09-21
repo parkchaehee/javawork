@@ -1,0 +1,13 @@
+package stringmethod;
+
+public class StringMethods2 {
+
+	public static void main(String[] args) {
+		// indexOf()검색에도움 -인덱스리턴/캐릭터-문자리턴
+		// 문자열이 시작되는 인덱스를 리턴합니다
+		String str = "Hello World Hello";
+		
+		str.indexOf("Hello")
+	}
+
+}

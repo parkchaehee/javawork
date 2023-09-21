@@ -1,0 +1,16 @@
+package chapter9.step1;
+
+public class Bus extends Car{
+	
+	public Bus() {
+		this.stop = "버스";
+		System.out.println(stop);
+	}
+
+	@Override
+	public void refuel() {
+		System.out.println("천연 가스를 충전합니다.");
+		
+	}
+
+}

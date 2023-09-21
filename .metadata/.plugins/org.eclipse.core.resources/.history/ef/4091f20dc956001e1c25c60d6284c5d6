@@ -1,0 +1,11 @@
+package stringmethod;
+
+public class StringTest {
+	
+	public static void main(String[] args) {
+		String javaStr = new Sstring("java");
+		
+		System.out.println(javaStr);
+	}
+
+}

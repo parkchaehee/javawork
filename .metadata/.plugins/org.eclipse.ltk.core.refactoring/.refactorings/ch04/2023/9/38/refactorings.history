@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Subject.java&apos; to &apos;ch07/src/arraylist.score&apos;&#x0D;&#x0A;- Original project: &apos;ch04&apos;&#x0D;&#x0A;- Destination element: &apos;ch07/src/arraylist.score&apos;&#x0D;&#x0A;- Original element: &apos;reference.subjects.Subject.java&apos;" description="Copy compilation unit" destination="=ch07/src&lt;arraylist.score" element1="/src&lt;reference.subjects{Subject.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1695089555518" units="1" version="1.0"/>
+</session>

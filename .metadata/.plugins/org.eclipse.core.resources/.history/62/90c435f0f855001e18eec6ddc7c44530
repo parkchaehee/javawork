@@ -1,0 +1,10 @@
+package abstracts.animal;
+
+public class Cat extends Animal{
+	
+	public Cat() {
+		this.kind = "고양이";
+		System.out.println(kind);
+	}
+
+}

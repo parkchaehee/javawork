@@ -1,0 +1,16 @@
+package abstracts.animal;
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		cat.breathe();
+		cat.sound();
+		
+		//다형성으로 객체 생성
+		Animal cat2 = new Cat();
+		cat2.breathe();
+		cat2.sound();
+	}
+
+}

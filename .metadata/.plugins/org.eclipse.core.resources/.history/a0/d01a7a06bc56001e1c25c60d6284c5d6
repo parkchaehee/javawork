@@ -1,0 +1,23 @@
+package interfaceex.sort;
+
+public class QuickSort implements Sort{
+
+	@Override
+	public void ascedning(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void descending(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void description() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package objectequals.memeber;
+
+public class Member {
+	private String memberId; //사번
+	private String name;     //이름
+	
+	public Member(String memberId, String name) {
+		this.memberId = memberId;
+		this.name = name;
+	}
+	
+
+}

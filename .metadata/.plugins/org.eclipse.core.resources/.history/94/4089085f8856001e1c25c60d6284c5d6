@@ -1,0 +1,12 @@
+package abstracts.template;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		//추상클래스는 객체생성안됨
+		//Car Car = new Car();
+		Car manualCar = new ManualCar();
+		manualCar.run();
+	}
+
+}

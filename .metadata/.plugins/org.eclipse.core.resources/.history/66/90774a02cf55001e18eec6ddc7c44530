@@ -1,0 +1,26 @@
+package objectequals;
+
+class Embloyee{
+	int empId;
+	String empName;
+	
+	Employee(int empId, String empName){
+		this.empId = empId;
+		this.empName = empName;
+	}
+}
+
+
+public class HashCodeTest {
+
+	public static void main(String[] args) {
+		Employee emp1 = new Employee(101, 장그래);
+		Employee emp2 = new Employee(101, 장그래);
+		
+		System.out.println(emp1 == emp2);
+		System.out.println(emp1.equals(emp2));
+		
+
+	}
+
+}

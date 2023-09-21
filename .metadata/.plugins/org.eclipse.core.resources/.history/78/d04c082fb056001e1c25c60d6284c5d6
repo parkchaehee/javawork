@@ -1,0 +1,11 @@
+package interfaceex.remocon;
+
+public interface RemoteControl {
+	
+	
+	//추상 메서드
+	public void turnOn();  //전원 켜기
+	public void turnOff(); //전원 끄기
+	
+
+}

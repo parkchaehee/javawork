@@ -1,0 +1,5 @@
+package abstracts.animal;
+
+public class Animal {
+
+}

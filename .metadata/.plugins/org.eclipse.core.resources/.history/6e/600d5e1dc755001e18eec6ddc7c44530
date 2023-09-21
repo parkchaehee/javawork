@@ -1,0 +1,39 @@
+package polymorphism.animals2;
+
+class Animal{
+	public void move() {
+		System.out.println("동물이 움직입니다.");
+	}
+}
+class Human extends Animal{
+
+	@Override
+	public void move() {
+		System.out.println("사람이 두 발로 걷습니다.");
+	}
+	
+	public void readBook() {
+		System.out.println("사람이 책을 읽습니다.");
+	}
+	
+}
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		AnimalTest aTest = new AnimalTest();
+		//자동형변환 - Animal 타입으로 객체 생성(다형성)
+		Animal animal = new Human();
+		animal.move();
+		
+		//강제형변환 - instanceof 키워드 사용/~~의 인스턴스다
+		if(animal instanceof Human); {
+			//animal은 human의 객체이다.
+			Human human = (Human)animal; //자식타입=(자식)부모타입
+			human.readBook();
+		}
+		
+
+	}
+
+}

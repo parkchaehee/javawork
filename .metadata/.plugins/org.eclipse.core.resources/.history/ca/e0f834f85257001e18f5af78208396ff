@@ -1,0 +1,21 @@
+package constant.enums;
+
+public class SeasonTest {
+
+	public static void main(String[] args) {
+		Season season;
+		
+		season = Season.여름;//초기화
+		
+		//System.out.println(season);
+		
+		switch(season){
+			case 봄:
+				season = Season.봄;
+				break;
+		}
+		System.out.println(season);
+
+	}
+
+}
