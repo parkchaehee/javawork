@@ -7,7 +7,7 @@ public class ByteTypeTest {
 		//정수 자료형 - byte, short, int, long
 		//byte의 범위 -128 ~ 127(256개)
 		//short의 범위 -32768 ~ 32767(개)
-		byte bData1 = -128;
+		byte bData1 = -128;//8비트 2의 8제곱
 		System.out.println(bData1);
 		
 		//byte bData2 = 128; -> 범위를 초과함
@@ -17,7 +17,6 @@ public class ByteTypeTest {
 		System.out.println(sData1);
 		
 		System.out.println("===============");
-		
 		
 		//10진수, 2진수, 16진수(메모리,주소)
 		//객체의 이름과 주소
@@ -42,12 +41,6 @@ public class ByteTypeTest {
 		System.out.println(val1);
 		System.out.println(val2);
 		
-		
-		
-		
-		
-		
-
 	}
 
 }
