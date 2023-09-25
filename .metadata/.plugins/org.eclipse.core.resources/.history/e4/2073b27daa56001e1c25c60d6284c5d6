@@ -1,7 +1,0 @@
-package interfaceex.calculator;
-
-public interface MyCalculator implements Calculator{
-	
-	
-
-}

@@ -14,16 +14,19 @@ public class ProductTest {
 		
 		tv.making();
 		System.out.println("모델명: " + prod1.getModel());
-		System.out.println("=============");
 		
+		System.out.println("=========================");
+		
+		//자동차를 생성해서 모델명을 출력하세요
 		Product<Car, String> prod2 = new Product<>();
 		
+		//자동차 인스턴스 생성
 		Car car = new Car();
-		
 		prod2.setKind(car);
 		prod2.setModel("전기차");
 		
 		car.making();
 		System.out.println("모델명: " + prod2.getModel());
 	}
+
 }

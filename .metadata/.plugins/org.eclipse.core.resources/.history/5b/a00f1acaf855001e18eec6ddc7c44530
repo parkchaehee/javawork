@@ -1,9 +1,0 @@
-package abstracts.animal;
-
-public class Cat extends Animal{
-	
-	public Cat() {
-		this.kind = "고양이";
-	}
-
-}

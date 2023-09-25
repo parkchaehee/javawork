@@ -9,24 +9,24 @@ public class VectorTest {
 		
 		List<String> vegeList = new Vector<>();
 		
-		//자료생성
+		//객체 생성
 		vegeList.add("양파");
 		vegeList.add("마늘");
 		vegeList.add("감자");
 		
+		//객체 삭제
 		if(vegeList.contains("양파")) {
 			vegeList.remove("양파");
 		}
 		
 		//리스트 객체의 개수
 		System.out.println("총 객체수: " + vegeList.size());
-				
-		//전체 출력
+		
+		//전체 조회
 		for(String vege : vegeList) {
 			System.out.println(vege);
 		}
-		System.out.println(vegeList);
-		
+
 	}
 
 }

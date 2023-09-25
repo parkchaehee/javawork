@@ -13,7 +13,7 @@ public class ThrowsTest {
 	}
 	
 	public static void findClass() throws ClassNotFoundException {
-		//컴파일러가 체크해줌 - 일반예외
+		//컴파일러가 체크해줌 - 일반 예외
 		//throws는 예외 미룸
 		Class.forName("java.lang.System2");
 	}

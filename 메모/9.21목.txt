@@ -73,22 +73,7 @@ ArrayList - 자료구조, 중복허용, hashCode(), equals() 불필요
 HashSet  - hashCode(), equals() 재정의 필요
 HashMap - hashCode(), equals() 불필요(중복 허용안됨)
 
-회사가 자동차를 제조합니다.
-모델명: 전기차
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Map 인터페이스
+- 키key와 값value의 쌍으로 저장
+- 키는 중복저장 안되고, 값은 가능
+- 구현클래스 : HashMap, HashTable, TreeMap

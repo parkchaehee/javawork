@@ -1,8 +1,8 @@
 package interfaceex;
 
 public class Car {
-	//필드 - 인터페이스형 타입 선언
-	Tire frontLeftTire; //Tire frontLeftTire = null
+	//필드 - 인터페이스형 타입 변수 선언
+	Tire frontLeftTire;  //Tire frontLeftTire=null
 	Tire frontRightTire;
 	Tire backLeftTire;
 	Tire backRightTire;
@@ -21,5 +21,5 @@ public class Car {
 		backLeftTire.roll();
 		backRightTire.roll();
 	}
-
+	
 }

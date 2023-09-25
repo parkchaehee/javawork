@@ -11,7 +11,9 @@ public class MyResourceTest {
 		
 		System.out.println(Integer.parseInt(res1.read1()));
 		System.out.println(Integer.parseInt(res1.read2()));
+		
 		res1.close();
+
 	}
 
 }

@@ -1,0 +1,19 @@
+변경후 저장할때
+cd c:/javaworks
+git add .
+git commit -m "interface"
+git push
+=================
+파일 다운받을때
+-처음 한번만 clone
+1. cd c:/javaworks
+2. git clone 리포지터리 주소복붙
+---http://github.com/kiyongee2/javawork.git
+-두번째부터는
+3. git pull
+
+
+
+
+cd gittest2
+git pull

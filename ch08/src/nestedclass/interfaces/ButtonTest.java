@@ -34,7 +34,5 @@ public class ButtonTest {
 			}
 		});
 		button.touch();
-
 	}
-
 }
