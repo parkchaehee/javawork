@@ -1,0 +1,92 @@
+싱글 스레드
+멀티 스레드
+스레드이름
+메이스레드 - 
+일반스레드 - thread-0
+getName()
+setName("threadA")
+스레드 생성방법
+1. 상속
+Thread는 Runnable 인터페이스의 구현 클래스
+class ChatThread extends Thread{
+  run(){}
+}
+
+2. 익명객체로 스레드 생성(클래스 없음)
+Thread chatThreadX = new Thread({
+  run();
+})
+
+데이터(파일) 입출력
+- 메모리(주기억장치 - RAN): System.out, System.in
+- 하드디스크(보조기억장치 - Hdd, SSD) : .txt, .db, .dat, .img
+
+- 바이트 기반 쓰기, 읽기 : 이미지, 사운드, 영상, 문서
+  OutputStream -> FileOutputStream, InputStream -> FileInputStream
+  정수, 실수, 문자열, 객체 데이터 쓰기가 불가
+  **문자열 전송 - getBytes()
+
+- 문자기반 쓰기, 읽기 : 문서
+  Reader-> FileReader, Writer-> FileWriter
+
+기반 스트림
+
+보조 스트림(decorator)
+ - 성능(버퍼링기능)향상, 데이터 처리(문자열, 객체)
+Buffered 스트림
+BufferedInputStream - 바이트 단위로 읽는 스트림에 버퍼링기능을 제공
+BufferedReader - 문자 단위로 스트림 버퍼링 기능 제공
+BufferedOutputStream, BufferedWriter
+ -  바이트 단위로 쓰는 스트림에 버퍼링기능을 제공
+- 내부적으로 8192바이트 크기의 배열을 가지고 있음: 빠르게 입출력 수행
+
+DataInputStream - 정수, 실수, 문자열 처리
+DataOutputStream
+객체 - 어느 시점에서 복사(직렬화-Serialization)
+역직렬화
+ObjectOutputStream
+ObjectInputStream
+
+직렬화 
+- 현 상태를 그대로 저장하거나 네트워크를 통해서 전송하기 위해
+
+연속 스트림(필드값을 일렬로 늘어선 바이트로 변경)으로 만드는 것
+ObjectOutputStream
+ObjectInputStream
+
+p437 hashmap
+
+Queue
+
+싱글톤
+CarFactory
+Car
+CarTest
+
+명령프롬프터 실행하는법
+이클립스
+export
+
+
+
+cd c:/jars
+dir
+java -jar bankinglist.jar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
