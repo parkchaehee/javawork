@@ -8,7 +8,7 @@ public class CarTest {
 		AutoCar autoCar = new AutoCar();
 		
 		bus.run();  //객체의 메서드(함수) 호출
-		autoCar.run();//클래스이름.메서드();
+		autoCar.run();
 		
 		bus.refuel();
 		autoCar.refuel();
@@ -19,5 +19,4 @@ public class CarTest {
 		bus.stop();
 		autoCar.stop();
 	}
-
 }

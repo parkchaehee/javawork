@@ -4,8 +4,7 @@ public class SwitchCaseTest2 {
 
 	public static void main(String[] args) {
 		// 메달 색상에 따른 메달 출력
-		
-		//변수 - medalColor
+		// 변수 - medalColor
 		// "Gold", "Silver", "Bronze"
 		String medalColor = "Gold";
 		
@@ -19,11 +18,9 @@ public class SwitchCaseTest2 {
 		case "Bronze":
 			System.out.println("동메달 입니다.");
 			break;
-		default: //case에 없는 경우 처리
+		default:
 			System.out.println("메달이 없습니다.");
 			break;
 		}
-
 	}
-
 }

@@ -12,7 +12,6 @@ public class CardTest {
 		System.out.println("카드번호: " + card2.getCardNumber());
 		System.out.println("카드번호: " + card3.getCardNumber());
 
-
 	}
 
 }

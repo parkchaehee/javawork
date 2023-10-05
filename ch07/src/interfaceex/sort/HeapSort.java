@@ -3,18 +3,19 @@ package interfaceex.sort;
 public class HeapSort implements Sort{
 
 	@Override
-	public void ascending(int[] arr) {
-		System.out.println("HeapSort ascendning");
+	public void ascending(int[] numbers) {
+		System.out.println("HeapSort ascending");
 	}
 
 	@Override
-	public void descending(int[] arr) {
+	public void descending(int[] numbers) {
 		System.out.println("HeapSort descending");
 	}
-
+	
 	@Override
 	public void description() {
 		Sort.super.description();
-		System.out.println("HeapSort 입니다.");
+		System.out.println("HeapSort입니다.");
 	}
+	
 }

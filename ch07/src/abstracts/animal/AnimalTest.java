@@ -8,7 +8,7 @@ public class AnimalTest {
 		cat.breathe();
 		cat.sound();*/
 		
-		//다형성으로(부모타입으로) 객체 생성
+		//다형성으로 객체 생성
 		Animal cat = new Cat();
 		cat.breathe();
 		cat.sound();
@@ -16,15 +16,15 @@ public class AnimalTest {
 		Animal dog = new Dog();
 		dog.breathe();
 		dog.sound();
-
-		System.out.println("=====================");
-		//메서드의 매개변수의 다형성 구현
-		animalSound(new Dog()); //메서드 호출
+		
+		System.out.println("=======================");
+		//메서드의 매개변수의 다형성
+		animalSound(new Dog());  //메서드 호출
 		animalSound(new Cat());
 	}
+	
 	public static void animalSound(Animal animal) {
 		animal.sound();
 	}
-
 
 }

@@ -7,24 +7,25 @@ public class WorkObject {
 		//현재 실행중인 스레드 객체 생성
 		Thread thread = Thread.currentThread();
 		System.out.println(thread.getName() + ": 작업 실행");
-		notify(); //다른 스레드를 실행대기 상태로 만든다(알림)
+		notify();  //다른 스레드를 실행 대기 상태로 만듬(알림)
 		
 		try {
-			wait();//자신은 일시정지 상태로 만든다
+			wait(); //자신은 일시 정지 상태로 만듬
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		} 
+		}  
 	}
+	
 	public synchronized void methodB() {
 		//현재 실행중인 스레드 객체 생성
 		Thread thread = Thread.currentThread();
 		System.out.println(thread.getName() + ": 작업 실행");
-		notify(); //다른 스레드를 실행대기 상태로 만든다(알림)
+		notify();  //다른 스레드를 실행 대기 상태로 만듬(알림)
 		
 		try {
-			wait();//자신은 일시정지 상태로 만든다
+			wait(); //자신은 일시 정지 상태로 만듬
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		} 
+		}  
 	}
 }

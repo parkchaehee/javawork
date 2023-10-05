@@ -16,12 +16,12 @@ public class LeadLineTest {
 			//보조 스트림에 기반 스트림 연결
 			BufferedReader br = new BufferedReader(reader);
 			
-			//String data = br.readLine();//1행읽기
+			//String data = br.readLine(); //1행 읽기
 			//System.out.println(data);
 			
 			while(true) {
 				String data = br.readLine();
-				if(data == null)break; //읽을 data가 없으면 빠져나옴
+				if(data == null) break;  //읽을 data가 없으면 빠져 나옴
 				System.out.println(data);
 			}
 			br.close();
@@ -31,5 +31,4 @@ public class LeadLineTest {
 			e.printStackTrace();
 		}
 	}
-
 }

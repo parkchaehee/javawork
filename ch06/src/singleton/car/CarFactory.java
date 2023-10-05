@@ -1,10 +1,9 @@
 package singleton.car;
 
 public class CarFactory {
-	
 	private static CarFactory instance;
 	
-	private CarFactory() {}//정보은닉
+	private CarFactory() {}
 	
 	//instance 생성 메서드 정의
 	public static CarFactory getInstance() {
@@ -13,11 +12,10 @@ public class CarFactory {
 		}
 		return instance;
 	}
+	
 	//자동차 생성 메서드
 	public Car createCar() {
 		Car car = new Car();
 		return car;
 	}
-	
-
 }

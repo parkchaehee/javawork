@@ -1,6 +1,6 @@
 package classes.methods;
 
-import classes.Calculator; //다른 패키지(소속)에 있으면 import 넣어주기
+import classes.Calculator;
 
 public class UseCalculator {
 
@@ -14,14 +14,11 @@ public class UseCalculator {
 		int mulVal = calc.mul(num1, num2);
 		int divVal = calc.div(num1, num2);
 		
-		System.out.println(calc); //객체의 메모리 주소
+		System.out.println(calc);  //객체의 메모리 주소
 		
 		System.out.println("두 수의 합: " + addVal);
 		System.out.println("두 수의 차: " + subVal);
 		System.out.println("두 수의 곱: " + mulVal);
 		System.out.println("두 수의 나누기: " + divVal);
-		
-
 	}
-
 }

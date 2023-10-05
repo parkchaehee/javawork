@@ -10,19 +10,24 @@ public class Book {
 		this.bookName = bookName;
 		this.author = author;
 	}
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
-	}
+	
 	public String getBookName() {
 		return bookName;
 	}
-	public void setAuthor(String author) {
-		this.author = author;
+	
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
 	}
+	
 	public String getAuthor() {
 		return author;
 	}
-	//객체의 문자열 정보
+	
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	//객체의 문자열 정보 재정의
 	@Override
 	public String toString() {
 		return bookName + ", " + author;

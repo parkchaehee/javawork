@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class HashMapTest2 {
-	
+
 	public static void main(String[] args) {
 		//Map 자료구조의 객체 생성
 		Map<String, Integer> map = new HashMap<>();
@@ -15,8 +15,8 @@ public class HashMapTest2 {
 		map.put("Java", ++idx);
 		map.put("Python", ++idx);
 		map.put("C", ++idx);
-		map.put("Python", ++idx); //중복 값만 바뀜
-		map.put("Javascript", ++idx); 
+		map.put("Python", ++idx);
+		map.put("Javascript", ++idx);
 		
 		//key 가져오기
 		Set<String> keys = map.keySet();
@@ -28,16 +28,19 @@ public class HashMapTest2 {
 		//key-value 조회
 		for(String key : keys)
 			System.out.println(key + ":" + map.get(key));
-		System.out.println("==================");
+		
+		System.out.println("=======================");
+		
+		//자료 존재 유무
+		System.out.println(map.containsKey("C++"));
 		
 		//자료 삭제
-				if(map.containsKey("Python")) {
-					map.remove("Python");
-				}
+		if(map.containsKey("Python")) {
+			map.remove("Python");
+		}
+		
 		//람다식 조회
 		keys.forEach(key -> System.out.println(key + ":" + map.get(key)));
-		
-		//자료 존재 유무 확인하기
-		System.out.println(map.containsKey("C++")); //false
 	}
+
 }

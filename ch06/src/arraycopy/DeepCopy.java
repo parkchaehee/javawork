@@ -15,23 +15,25 @@ public class DeepCopy {
 		array2[1] = new Book();
 		array2[2] = new Book();
 		
-		//array1을 array2에 복사(setter, getter)사용
-		for(int i=0; i<array1.length; i++) {
+		//array1을 array2에 복사(setter, getter) 사용
+		for(int i = 0; i < array1.length; i++) {
 			array2[i].setBookName(array1[i].getBookName());
 			array2[i].setAuthor(array1[i].getAuthor());
 		}
-		//array1(원본) 첫째요소출력
+		
+		//array1(원본)의 첫째 요소 수정
 		array1[0].setBookName("아리랑1");
 		array1[0].setAuthor("조정래");
 		
-		System.out.println("***array1출력***");
-		for(int i=0; i<array1.length; i++)
+		System.out.println("*** array1 출력 ***");
+		for(int i = 0; i < array1.length; i++) {
 			System.out.println(array1[i].toString());
+		}
 		
-		System.out.println("***array2출력***");
-		for(int i=0; i<array2.length; i++)
+		System.out.println("*** array2 출력 ***");
+		for(int i = 0; i < array2.length; i++) {
 			System.out.println(array2[i].toString());
+		}
 	}
-	
 
 }

@@ -16,23 +16,18 @@ public class ArrayTest4 {
 		data[1] = 20.0;
 		data[2] = 30.0;
 		
-		//전체 조회
+		//전체 조회(총점 계산)
 		for(int i = 0; i < data.length; i++) {
 			total += data[i];
 			System.out.println(data[i]);
 		}
 		//평균 계산
 		average = total / data.length;
-				
+		
 		//총점 출력
-		System.out.println("합계 : " + total);
+		System.out.println("총점 : " + total);
 		
 		//평균 출력
 		System.out.println("평균 : " + average);
-			
-			
-		}
-		
-
 	}
-
+}

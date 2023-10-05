@@ -12,10 +12,12 @@ public class MyQueue {
 	public MyQueue() {
 		arrayQueue = new ArrayList<>();
 	}
-	//자료 저장 - add()
+	
+	//자료 저장 - add() : 맨 뒤에서 추가
 	public void enQueue(String data) {
 		arrayQueue.add(data);
 	}
+	
 	//자료 삭제 - remove() : 맨 앞에서 꺼냄
 	public String deQueue() {
 		int size = arrayQueue.size();
@@ -24,7 +26,5 @@ public class MyQueue {
 			return null;
 		}
 		return arrayQueue.remove(0);
-		
 	}
-	
 }

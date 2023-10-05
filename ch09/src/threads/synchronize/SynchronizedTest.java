@@ -3,7 +3,7 @@ package threads.synchronize;
 public class SynchronizedTest {
 
 	public static void main(String[] args) {
-		//공유객체 생성
+		//공유 객체 생성
 		Calculator calculator = new Calculator();
 		
 		//User1Thread 객체 생성
@@ -18,4 +18,3 @@ public class SynchronizedTest {
 	}
 
 }
-

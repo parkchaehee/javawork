@@ -14,7 +14,7 @@ public class UsingDefine {
 		System.out.println("원주율은 " + Math.PI);  //정밀한 값
 		
 		System.out.println(Define.GOOD_MORNING);
-		
+
 	}
 
 }

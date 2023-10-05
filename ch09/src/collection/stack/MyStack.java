@@ -11,10 +11,12 @@ public class MyStack {
 	public MyStack() {
 		arrayList = new ArrayList<>();
 	}
+	
 	//자료 추가(저장)
 	public void push(String data) {
 		arrayList.add(data);
 	}
+	
 	//자료 삭제(꺼내기)
 	public String pop() {
 		int size = arrayList.size();
@@ -22,7 +24,6 @@ public class MyStack {
 			System.out.println("스택이 비었습니다.");
 			return null;
 		}
-		return arrayList.remove(size-1); //배열의 인덱스이므로 size-1
+		return arrayList.remove(size - 1);  //배열의 인덱스이므로 1이 작다.
 	}
-
 }

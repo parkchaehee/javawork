@@ -1,6 +1,7 @@
 package datainputoutput;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -12,14 +13,14 @@ public class ReadExample1 {
 			InputStream is = new FileInputStream("C:/File/test1.db");
 			while(true) {
 				int data = is.read();
-				if(data ==-1)break; //데이터가 없음 
-				System.out.println(data);
+				if(data == -1) //데이터가 없음
+					break; 
+				System.out.println((char)data);	
 			}
 			is.close();
-		} catch (IOException e) {
+		}catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 }

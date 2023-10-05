@@ -4,16 +4,12 @@ public class SwitchCaseTest {
 
 	public static void main(String[] args) {
 		// 랭킹에 따른 메달 출력
-		// 1등 금메달, 2등 은메달, 3등 동메달
-		//변수 - rank
-		
-		
-		
-		
+		// 1 - 금메달, 2-은메달, 3-동메달
+		// 변수 - rank
 		int rank = 1;
 		
 		switch(rank) { //switch(변수)
-		case 1:  // :콜론으로 끝남
+		case 1: //콜론으로 끝남
 			System.out.println("금메달입니다.");
 			break;
 		case 2:
@@ -26,7 +22,5 @@ public class SwitchCaseTest {
 			System.out.println("메달이 없습니다.");
 			break;
 		}
-
 	}
-
 }

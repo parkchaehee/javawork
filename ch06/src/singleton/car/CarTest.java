@@ -11,7 +11,6 @@ public class CarTest {
 		
 		System.out.println("신차 번호: " + mySonata.getCarNum());
 		System.out.println("신차 번호: " + yourMorning.getCarNum());
-		
 	}
 
 }

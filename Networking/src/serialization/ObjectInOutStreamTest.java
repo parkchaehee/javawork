@@ -10,17 +10,17 @@ import java.io.OutputStream;
 import java.util.Arrays;
 
 public class ObjectInOutStreamTest {
-
+	
 	public static void main(String[] args) {
 		//Member 객체를 역직렬화해서 파일에 쓰기
-		//인코딩(encoding-코드화하다{이진수}) <-> 디코딩(decoding-코드화풀기(문자화))
+		//인코딩(encoding-코드화하다{이진수}) <-> 디코딩(decoding-코드를 푸는것(문자화))
 		//역직렬화 - 저장된 내용이나 전송받은 내용을 다시 복원(디코딩)하는 것
 		try(OutputStream os = new FileOutputStream("object.dat");
 			ObjectOutputStream oos = new ObjectOutputStream(os)){
 			
 			Member m1 = new Member("sky123", "김하늘");
 			Product p1 = new Product("스마트폰", 1200000);
-			int[] number = {1, 2, 3, 4}; //정수형 배열 객체
+			int[] number = {1, 2, 3, 4};  //정수형 배열 객체
 			
 			//파일에 쓰기
 			oos.writeObject(m1);
@@ -28,10 +28,10 @@ public class ObjectInOutStreamTest {
 			oos.writeObject(number);
 			
 			oos.flush();
-			
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
+		
 		//객체를 역직렬화해서 파일에서 읽기
 		try(InputStream is = new FileInputStream("object.dat");
 			ObjectInputStream ois = new ObjectInputStream(is)){
@@ -44,10 +44,8 @@ public class ObjectInOutStreamTest {
 			System.out.println(m2);
 			System.out.println(p2);
 			System.out.println(Arrays.toString(number2));
-			
 		}catch(Exception e) {
 			e.printStackTrace();
-		}
+		} 
 	}
-
 }

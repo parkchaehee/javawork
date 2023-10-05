@@ -19,15 +19,14 @@ public class DogArrayList {
 		dogList.add(dog3);
 		
 		//2번 인덱스 출력
-		System.out.println(dogList.get(2) + "\n");
+		System.out.println(dogList.get(2));
 		
-		//전체 출력
-		for(int i=0; i<dogList.size(); i++) {
-			
+		//전체 조회
+		for(int i = 0; i < dogList.size(); i++) {
 			Dog dog = dogList.get(i);
 			System.out.println(dog);
 		}
-
+	
 	}
 
 }

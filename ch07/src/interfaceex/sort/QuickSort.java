@@ -3,19 +3,19 @@ package interfaceex.sort;
 public class QuickSort implements Sort{
 
 	@Override
-	public void ascending(int[] arr) {
-		System.out.println("QuickSort ascendning");
+	public void ascending(int[] numbers) {
+		System.out.println("QuickSort ascending");
 	}
 
 	@Override
-	public void descending(int[] arr) {
+	public void descending(int[] numbers) {
 		System.out.println("QuickSort descending");
 	}
 
 	@Override
 	public void description() {
 		Sort.super.description();
-		System.out.println("QuickSort 입니다.");
+		System.out.println("QuickSort입니다.");
 	}
-
+	
 }

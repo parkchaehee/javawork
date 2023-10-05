@@ -1,7 +1,7 @@
 package generic;
 
 public class Fruit {
-	String name; //과일이름
+	String name;   //과일 이름
 	
 	Fruit(String name){
 		this.name = name;
@@ -11,6 +11,4 @@ public class Fruit {
 	public String toString() {
 		return name;
 	}
-	
-
 }

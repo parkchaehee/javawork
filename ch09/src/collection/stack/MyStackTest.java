@@ -12,11 +12,18 @@ public class MyStackTest {
 		stack.push("c");
 		
 		//객체 빼기
-		System.out.println(stack.pop());//c
-		System.out.println(stack.pop());//b
-		System.out.println(stack.pop());//a
-		System.out.println(stack.pop());//a
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 		
 	}
 
 }
+
+
+
+
+
+
+

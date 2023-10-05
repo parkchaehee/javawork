@@ -14,7 +14,7 @@ public class MyQueueTest {
 		System.out.println(queue.deQueue());
 		System.out.println(queue.deQueue());
 		System.out.println(queue.deQueue());
-		System.out.println(queue.deQueue());//초과
+		System.out.println(queue.deQueue());
 	}
 
 }

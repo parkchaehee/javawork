@@ -8,25 +8,18 @@ public class ArrayTest2 {
 		// 값이 비어있으면 null을 출력
 		String[] cars = new String[4];
 		
-		// 입력(저장)
-		cars[0] ="Sonata0";
-		cars[1] ="Sonata1";
-		cars[2] ="Sonata2";
-		cars[3] ="Sonata2";
+		//입력(저장)
+		cars[0] = "Sonata";
+		cars[1] = "Morning";
+		cars[2] = "K7";
+		cars[3] = "K7";
 		
+		//특정한 위치(1번 인덱스) 조회
+		System.out.println(cars[1]);  //Morning
 		
-		// 특정한 위치(1번 인덱스) 접근
-		System.out.println(cars[1]);
-		
-		
-		// 전체 출력
-		System.out.println(cars.length);
+		//전체 출력
 		for(int i = 0; i < cars.length; i++) {
 			System.out.println(cars[i]);
 		}
-		
-				
-
 	}
-
 }

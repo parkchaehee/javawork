@@ -11,7 +11,6 @@ public class WaitNotifyTest {
 		
 		threadA.start();
 		threadB.start();
-
 	}
 
 }

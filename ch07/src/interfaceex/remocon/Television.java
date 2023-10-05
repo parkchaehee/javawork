@@ -1,5 +1,6 @@
 package interfaceex.remocon;
 
+//RemoteControl 인터페이스를 구현한 Television 클래스
 public class Television implements RemoteControl{
 	
 	//필드
@@ -7,15 +8,17 @@ public class Television implements RemoteControl{
 
 	@Override
 	public void turnOn() {
-		System.out.println("티비를 켭니다.");
+		System.out.println("TV를 켭니다.");
 	}
+
 	@Override
 	public void turnOff() {
-		System.out.println("티비를 끕니다.");
+		System.out.println("TV를 끕니다.");
 	}
+
 	@Override
 	public void setVolume(int volume) {
-		//volume: 0~10 설정
+		//volume: 0 ~ 10 설정
 		if(volume > RemoteControl.MAX_VOLUME) {
 			this.volume = RemoteControl.MAX_VOLUME;
 		}else if(volume < RemoteControl.MIN_VOLUME) {

@@ -22,14 +22,16 @@ public class BeepPrintTest3 {
 			}
 		};
 		thread.start(); //스레드 실행
+		
 		//문자 출력
 		for(int i=0; i<=5; i++) {
 			System.out.println("띵");
+			
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
-	}
+	}//main 끝
 }

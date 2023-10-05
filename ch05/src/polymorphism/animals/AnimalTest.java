@@ -7,7 +7,8 @@ class Animal{
 	}
 }
 
-class Human extends Animal{//클래스는 작은가로없음
+class Human extends Animal{
+
 	@Override
 	public void move() {
 		System.out.println("사람이 두 발로 걷습니다.");
@@ -15,6 +16,7 @@ class Human extends Animal{//클래스는 작은가로없음
 }
 
 class Tiger extends Animal{
+
 	@Override
 	public void move() {
 		System.out.println("호랑이가 네 발로 뜁니다.");
@@ -25,16 +27,11 @@ class Eagle extends Animal{
 
 	@Override
 	public void move() {
-		System.out.println("독수리가 납니다.");
+		System.out.println("독수리가 하늘을 날아갑니다.");
 	}
-	/*public void move() {
-		System.out.println("독수리가 납니다.");
-	}*/
 }
 
-
 public class AnimalTest {
-	
 	//moveAnimal() 정의 - 매개변수의 다형성
 	public void moveAnimal(Animal animal) {
 		animal.move();
@@ -49,13 +46,13 @@ public class AnimalTest {
 		Animal eagle = new Eagle();
 		Animal tiger = new Tiger();
 		
-		//moveAnimal() 호출    //static 안붙인경우
-		aTest.moveAnimal(human); //Animal animal = new human
-		aTest.moveAnimal(eagle); 
-		aTest.moveAnimal(tiger); 
+		//moveAnimal() 호출
+		aTest.moveAnimal(human);  //Animal animal = new Human
+		aTest.moveAnimal(eagle);
+		aTest.moveAnimal(tiger);
 		
-		//moveAnimal(human); //static을 붙인경우 호출
-
+		//moveAnimal(human);  //static을 붙인 경우 호출한 상황
+		
 	}
 
 }

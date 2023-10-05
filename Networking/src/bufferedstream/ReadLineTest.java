@@ -21,17 +21,15 @@ public class ReadLineTest {
 			System.out.println(Arrays.toString(word));
 			
 			//랜덤 출력
-			//int dice = (int)(Math.random()*6 +1);
+			//int dice = (int)(Math.random()*6 + 1);
 			//System.out.println(dice);
-			//System.out.println(word.length);
+			//System.out.println(word.length); 
 			int rnd = (int)(Math.random()*word.length);
 			System.out.println(rnd);
 			System.out.println(word[rnd]);
 			
-		} catch (IOException e) {
+		}catch(IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }
