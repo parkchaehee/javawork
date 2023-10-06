@@ -1,0 +1,160 @@
+데이터(data) - 문자, 숫자, 객체, 이미지, 소리, 영상
+정보(information) - 데이터에 의미나 가치를 부여
+지식(knowledge) - 사물이나 현상에 대한 이해
+
+
+관악산 높이             -> 데이터
+관악산의 지리적 특성 -> 정보
+관악산 소개 보고서   -> 지식
+
+데이터베이스(Database)
+ - 데이터를 모아 놓음 (서로 관련- 논리적으로 연관)
+   (메모장에 두서없이 메모 - 데이터베이스 아님)
+ - 학사 관리 (수강신청, 성적)를 위해 데이터 저장
+ - 은행, 병원(건강보험 데이터베이스)
+
+소프웨어 엔지니어링(자바) - 웹, 앱개발자
+네트워크 엔지니어링(TFP 채팅) - 네트워크 , 보안, 시스템 관리자
+DB, 엔지니어링 - DBA, DB 개발자
+US, UI 엔지니어링 - 웹 프론트 개발자, 웹 퍼블리셔
+
+B엔지니어링
+DBMS(Database Management System)
+ - 많은양의 데이터를 정교하게 구축하고 관리하는 프로그램
+ - 데이터 베이스 정의, 갱신, 질의, 보안기능을 제공(SQL 언어)
+ - 주기억장칭서 샐행되면 컴파일러, 질의처리기, 트랜잭션 관리자
+ - Oracle사의 Oracle(상용), MySQL(상용무료) / ,A
+
+트랜잭션(Transaction) - COMMIT(수행완료), ROLLBACK(복원, 취소)
+
+***Oracle DBMS 설치
+ - 검색 : 오라클 DB 다운로드
+ - Run Oracle Database 21c XE on Windows
+c드라이브에 압축 풀고
+setup 
+C:\app\user1\product\21c\
+
+sqlplus
+system
+pw1234
+show user
+exit   >>닫기
+
+내pc > 속성 > 16.0GB
+내컴퓨터 > 관리 서비스 Oracle 중지시키면 메모리사용적어짐
+oracledb java 연결폴더위치
+ - C:\app\user1\product\21c\dbhomeXE\jdbc\lib
+
+=========================================
+sql 언어 - 관계형 데이터베이스 관리 시스템(스키마)
+구조적 언어(객체지향x)
+구조적 데이터 질의(Query) 언어이다.
+DB(데이터베이스, 스키마(schema)) > 테이블(Table엔티티(객체))
+ - DDL(데이터 정의어), DML(데이터 조작어), DCL(데이터 제어어)
+
+
+1. DDL (Data Definition Language) - CREATE(생성), ALTER(변경), DROP(삭제) >명령어
+CREATE database 디비이름;
+CREATE table 테이블이름(
+   칼럼명   자료형 이름(문자 VARCHAR2)
+   칼럼명   자료형 이름(숫자 NUMBER)
+);
+
+2. DML (Data Manipulation Language) 
+ - INSERT(삽입), SELECT(검색), UPDATE(수정), DELETE(삭제)
+데이터 생성(추가) - INSERT INTO 테이블이름 VALUES();
+검색                 - SELECT 칼럼명 FROM 테이블이름
+수정
+삭제
+
+*** 데이터 모델 ***
+ - 계층형 모델
+ - 네트워크형 모델
+ - 관계형 모델(현재 가장 많이 사용) : RDBMS(Relation DBMS): 테이블 형태
+ - 객체-관계형 모델(관계 + 객체)
+ - 객체형 모델
+
+
+---아이디, 비밀번호---
+sid : system - user(계정)
+pw : pw1234 - identified by
+
+
+데이터베이스
+
+ - DBMS  설치
+ - IDE : sql developer 다운로드
+C드라이브에 압축풀기
+C:\sqldeveloper.EXE > 바탕화면에 보내기
+========================================
+
+명령어
+
+정의어
+CREATE(생성)
+ALTER(변경)
+DROP(삭제)
+
+조작어
+INSERT
+SELECT
+
+========================================
+--트랜잭션 : COMMIT, ROLLBACK
+INSERT, UPDATE, DELETE 했을경우 반드시 COMMIT을 해야함
+
+제약조건
+기본키 - primary key(중복 불허) <-not null이 포함되어있음
+null 불허 - not null
+
+
+
+
+
+git branch -M main
+모디파이
+main으로 변경
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,8 +12,16 @@ git push
 -두번째부터는
 3. git pull
 
-
-
-
 cd gittest2
 git pull
+==============================
+cd c:/sqlworks
+git status
+git init
+git add .
+git commit -m "sql source"
+git branch
+git branch -M main
+git branch
+git remote add origin https://github.com/parkchaehee/sqlwork.git
+git push -u origin main
