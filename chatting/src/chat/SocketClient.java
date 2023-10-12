@@ -1,4 +1,4 @@
- package chat;
+package chat;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -26,7 +26,7 @@ public class SocketClient {
 			InetSocketAddress isa = 
 					(InetSocketAddress) socket.getRemoteSocketAddress();
 			//this.clientIp = isa.getHostName();
-			this.clientIp = isa.getHostString(); //IP 주소
+			this.clientIp = isa.getHostString();  //IP 주소
 			receive();
 		} catch (IOException e) {
 		}

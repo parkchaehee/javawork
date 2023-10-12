@@ -1,7 +1,12 @@
 package domain;
 
-//dto 클래스(자료 전달 객체), vo 
-public class User {
+import java.io.Serializable;
+
+//dto 클래스(자료 전달 객체), vo
+public class User implements Serializable{
+	
+	private static final long serialVersionUID = 1111L;
+	
 	//필드
 	private String userId;
 	private String userName;
@@ -49,7 +54,4 @@ public class User {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword + ", userAge="
 				+ userAge + ", userEmail=" + userEmail + "]";
 	}
-	
-	
-
 }

@@ -14,7 +14,6 @@ public class LottoTest {
 		//System.out.println(lotto[0]);
 		
 		//6개를 동시에 생성
-		
 		for(int i = 0; i < lotto.length; i++) {
 			lotto[i] = (int)(Math.random()*45 + 1);
 			
@@ -37,13 +36,8 @@ public class LottoTest {
 		for(int i = 0; i < lotto.length; i++) {
 			System.out.print(lotto[i] + " ");
 		}
-		
 		System.out.println();
 		
 		System.out.println(Arrays.toString(lotto));
-		
-		//파일 이름 출력
-		LottoTest lottoTest = new LottoTest();
-		System.out.println(lottoTest);
 	}
 }

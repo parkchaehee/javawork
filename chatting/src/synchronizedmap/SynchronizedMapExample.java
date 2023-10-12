@@ -6,12 +6,12 @@ import java.util.Map;
 import java.util.Set;
 
 public class SynchronizedMapExample {
-	
+
 	public static void main(String[] args) {
-		//동기화된 맵 컬랙션 - 멀티 스레드
-		Map<Integer, String> map =
+		//동기화된 맵 컬렉션 - 멀티 스레드
+		Map<Integer, String> map = 
 				Collections.synchronizedMap(new HashMap<>());
-		//Map<Integer, String> map = new HashMap<>(); //싱글스레드는 안됨
+		//Map<Integer, String> map = new HashMap<>(); //싱글 스레드
 		
 		Thread threadA = new Thread() {
 			@Override
@@ -21,6 +21,7 @@ public class SynchronizedMapExample {
 				}
 			}
 		};
+		
 		Thread threadB = new Thread() {
 			@Override
 			public void run() {
@@ -29,12 +30,11 @@ public class SynchronizedMapExample {
 				}
 			}
 		};
-		
-		threadA.start(); //main 스레드가 호출하고 일시정지 상태로 들어감
+		threadA.start();  //메인스레드가 호출하고 일시정지 상태로 들어감
 		threadB.start();
 		
 		try {
-			threadA.join(); //run()을 실행
+			threadA.join();  //run()을 실행
 			threadB.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -42,9 +42,9 @@ public class SynchronizedMapExample {
 		
 		System.out.println("총 객체수: " + map.size());
 		
+		//map에 저장된 자료 전체 출력
 		Set<Integer> keys = map.keySet();
 		for(Integer key : keys)
 			System.out.println(key + ", " + map.get(key));
-	
-}
+	}
 }
