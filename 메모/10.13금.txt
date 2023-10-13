@@ -1,0 +1,107 @@
+
+내장 함수 - 수학, 날짜와 시간, 문자열
+
+ - 숫자 : ABS(), BOUND(), TRUNC(FLOOR)
+ - 문자 : REPLACE(), SUBSTR()
+ - 날짜와 시간
+
+   현재 날짜 - SYSDATE
+   특정한 날짜 - TO_DATE('2023-10-12')
+   날짜 형식 변환 함수 - TO_CHAR(날짜, 형식)
+
+   **날짜 연산
+
+조건에 관련한 명령어(구문), 함수(DECODE())
+Case
+    when then
+    Else
+End
+
+NVL() - 널값 처리
+
+
+java 연동
+CRUD
+- INSERT : 게시글 추가
+- SELECT : 전체목록조회, 1건 조회(상세보기)
+- UPDATE : 게시글 수정
+- DELETE : 게시글 삭제
+
+
+BankArrayList
+
+1. main() - main.java
+
+2. 사용자정의 함수() - AccountDAO.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================
