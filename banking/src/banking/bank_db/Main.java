@@ -36,7 +36,7 @@ public class Main {
 					dao.selectAccount();  //계좌 검색
 				}else if(selectNo == 7) {
 					sw = false;    //종료
-				}else {
+			}else {
 					System.out.println("지원되지 않는 기능입니다. 다시 입력해 주세요");
 				}
 			}catch(NumberFormatException e) {

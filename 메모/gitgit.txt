@@ -9,6 +9,7 @@ git push
 1. cd c:/javaworks(다운받을 폴더)
 2. git clone 리포지터리 주소복붙
 ---http://github.com/kiyongee2/javawork.git
+https://github.com/kiyongee2/sqlwork.git
 -두번째부터는
 3. git pull
 
