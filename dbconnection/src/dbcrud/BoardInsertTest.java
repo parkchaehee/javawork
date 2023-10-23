@@ -1,6 +1,7 @@
 package dbcrud;
 
 import java.io.FileInputStream;
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -24,27 +25,26 @@ public class BoardInsertTest {
 			
 			//db 처리 작업
 			//매개 변수화된 sql문 작성 - 동적 바인딩
-			String sql = "INSERT INTO boards (bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata)"
-					+ " VALUES(seq_bno.NEXTVAL,?, ?, ?, SYSDATE, ?, ?)";
+			String sql = "INSERT INTO boards (bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
+					+ "VALUES (seq_bno.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
 			//? 값 지정
 			pstmt.setString(1, "스마트 폰");
 			pstmt.setString(2, "아이폰 입니다.");
 			pstmt.setString(3, "cloud");
-			//사진을 첨부한 경우
+			//사진 첨부한 경우
 			pstmt.setString(4, "phone.PNG");
 			pstmt.setBlob(5, new FileInputStream("src/dbcrud/phone.PNG"));
 			//사진 미첨부인 경우
 			//pstmt.setString(4, null);
 			//Blob blob = null;
-			//pstmt.setBlob(5,  blob);
+			//pstmt.setBlob(5, blob);
 			
 			//sql 실행
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행의 수: " + rows);
 			//auto commit이 됨
-			
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {  //반드시 수행되는 구간
 			if(conn != null) { //연결이 되어 있다면
@@ -56,5 +56,7 @@ public class BoardInsertTest {
 				}
 			}
 		}
+
 	}
+
 }

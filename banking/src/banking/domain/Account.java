@@ -3,7 +3,7 @@ package banking.domain;
 import java.io.Serializable;
 
 public class Account implements Serializable{
-	
+
 	private static final long serialVersionUID = 11111L;
 	
 	//필드

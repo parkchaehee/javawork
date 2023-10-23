@@ -1,5 +1,6 @@
 package dbcrud;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -37,7 +38,7 @@ public class UserInsertTest {
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행의 수: " + rows);
 			//auto commit이 됨
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {  //반드시 수행되는 구간
 			if(conn != null) { //연결이 되어 있다면
@@ -49,7 +50,6 @@ public class UserInsertTest {
 				}
 			}
 		}
-
-	}
+	}//main 끝
 
 }

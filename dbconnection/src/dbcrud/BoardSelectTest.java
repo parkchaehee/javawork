@@ -17,7 +17,6 @@ import domain.Board;
 public class BoardSelectTest {
 
 	public static void main(String[] args) {
-		
 		Connection conn = null;   //네트워크 연결 클래스
 		PreparedStatement pstmt = null;  //sql 처리 인터페이스
 		try {
@@ -47,12 +46,12 @@ public class BoardSelectTest {
 				board.setBcontent(rs.getString("bcontent"));
 				board.setBwriter(rs.getString("bwriter"));
 				board.setBdate(rs.getDate("bdate"));
-				board.setBfileName(rs.getString("bfileName"));
-				board.setBfileData(rs.getBlob("bfileData"));
+				board.setBfileName(rs.getString("bfilename"));
+				board.setBfildData(rs.getBlob("bfiledata"));
 				boardList.add(board);
 				
 				//서버 컴퓨터의 하드디스크에 첨부 파일 저장
-				Blob blob = board.getBfileData();
+				Blob blob = board.getBfildData();
 				if(blob != null) {
 					InputStream is = blob.getBinaryStream();
 					OutputStream os = 
@@ -65,20 +64,20 @@ public class BoardSelectTest {
 						if(num == -1) break;
 						os.write(data, 0, num);
 					}*/
-					is.transferTo(os);//바이너리 파일 쓰기(저장) 메서드
-					
+					is.transferTo(os);  //바이너리 파일 쓰기(저장) 메서드
 					
 					os.flush();
 					os.close();
 					is.close();
 				}
 			}
+			//boardList 출력
 			for(Board board : boardList) {
 				System.out.println(board);
 			}
 			rs.close();
 			pstmt.close();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {  //반드시 수행되는 구간
 			if(conn != null) { //연결이 되어 있다면
@@ -90,5 +89,8 @@ public class BoardSelectTest {
 				}
 			}
 		}
+
+
 	}
+
 }

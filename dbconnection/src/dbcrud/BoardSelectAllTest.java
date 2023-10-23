@@ -17,7 +17,6 @@ import domain.Board;
 public class BoardSelectAllTest {
 
 	public static void main(String[] args) {
-		
 		Connection conn = null;   //네트워크 연결 클래스
 		PreparedStatement pstmt = null;  //sql 처리 인터페이스
 		try {
@@ -36,7 +35,7 @@ public class BoardSelectAllTest {
 			String sql = "SELECT * FROM boards "
 					+ "ORDER BY bno DESC";
 			pstmt = conn.prepareStatement(sql);
-
+			
 			//sql 실행
 			ResultSet rs = pstmt.executeQuery();
 			List<Board> boardList = new ArrayList<>();
@@ -47,17 +46,18 @@ public class BoardSelectAllTest {
 				board.setBcontent(rs.getString("bcontent"));
 				board.setBwriter(rs.getString("bwriter"));
 				board.setBdate(rs.getDate("bdate"));
-				board.setBfileName(rs.getString("bfileName"));
-				board.setBfileData(rs.getBlob("bfileData"));
+				board.setBfileName(rs.getString("bfilename"));
+				board.setBfildData(rs.getBlob("bfiledata"));
 				
-				boardList.add(board); // 리스트에 객체 저장
+				boardList.add(board); //리스트에 객체 저장
 			}
+			//boardList 출력
 			for(Board board : boardList) {
 				System.out.println(board);
 			}
 			rs.close();
 			pstmt.close();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {  //반드시 수행되는 구간
 			if(conn != null) { //연결이 되어 있다면
@@ -69,5 +69,8 @@ public class BoardSelectAllTest {
 				}
 			}
 		}
+
+
 	}
+
 }

@@ -24,9 +24,9 @@ public class JDBCUtil {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
+	
 	//db 연결 종료(삽입, 수정, 삭제)
 	public static void close(Connection conn, 
 			PreparedStatement pstmt) {
@@ -46,7 +46,7 @@ public class JDBCUtil {
 		}
 	}
 	
-	//db연결 종료 메서드(조회)
+	//db 연결 종료 메서드(조회)
 	public static void close(Connection conn, 
 			PreparedStatement pstmt, ResultSet rs) {
 		if(rs != null) {
@@ -71,5 +71,4 @@ public class JDBCUtil {
 			}
 		}
 	}
-
 }

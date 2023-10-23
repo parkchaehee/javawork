@@ -1,6 +1,7 @@
 package dbcrud;
 
 import java.io.FileInputStream;
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -24,17 +25,16 @@ public class BoardDeleteTest {
 			
 			//db 처리 작업
 			//매개 변수화된 sql문 작성 - 동적 바인딩
-			String sql = "DELETE FROM boards WHERE bno = ?"; //*없음
+			String sql = "DELETE FROM boards WHERE bno = ?";
 			pstmt = conn.prepareStatement(sql);
 			//? 값 지정
-			pstmt.setInt(1, 9); //1은 칼럼 뒤에 8은 글번호 8번임
+			pstmt.setInt(1, 2); //뒤의 1은 글번호 1번임
 			
 			//sql 실행
 			int rows = pstmt.executeUpdate();
-			System.out.println("저장된 행의 수: " + rows);
+			System.out.println("삭제된 행의 수: " + rows);
 			//auto commit이 됨
-			
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {  //반드시 수행되는 구간
 			if(conn != null) { //연결이 되어 있다면
@@ -46,5 +46,7 @@ public class BoardDeleteTest {
 				}
 			}
 		}
+
 	}
+
 }

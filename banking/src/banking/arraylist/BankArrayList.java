@@ -71,8 +71,8 @@ public class BankArrayList {
 						System.out.print("계좌주(한글, 영어): ");
 						String owner = scanner.nextLine();
 						
-						regExp = "[a-zA-Z가-힣]+"; //영어, 한글만
-						result = Pattern.matches(regExp,  owner);
+						regExp = "[a-zA-Z가-힣]+";  //영어, 한글만
+						result = Pattern.matches(regExp, owner);
 						if(result) {
 							System.out.print("초기 입금액: ");
 							int balance = Integer.parseInt(scanner.nextLine());

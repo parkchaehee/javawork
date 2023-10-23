@@ -58,7 +58,6 @@ public class UserSelectAllTest {
 			}*/
 			
 			for(User user : userList) {
-				//System.out.println(user);
 				System.out.println("userId: " + user.getUserId());
 				System.out.println("userName: " + user.getUserName());
 				System.out.println("userPassword: " + user.getUserPassword());
