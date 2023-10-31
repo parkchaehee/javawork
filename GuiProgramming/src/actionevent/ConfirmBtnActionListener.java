@@ -8,7 +8,6 @@ import javax.swing.JTextField;
 
 //ActionListener를 구현한 클래스
 public class ConfirmBtnActionListener implements ActionListener{
-	
 	//필드
 	JTextField text;
 	JLabel label;
@@ -18,13 +17,12 @@ public class ConfirmBtnActionListener implements ActionListener{
 		this.text = text;
 		this.label = label;
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//버튼을 클릭했을때 상태 구현 : 입력된 이름을 가져와서 레이블에서 출력
+		//버튼을 클릭했을때 상태 구현 :입력된 이름을 가져와서 레이블에서 출력
 		String name = text.getText();
 		label.setText("Hello~ " + name);
-		
 	}
 
 }

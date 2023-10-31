@@ -1,0 +1,86 @@
+
+- 집계함수 : sum(), count(), avg(), max(), min()
+- 그룹함수 : group by rollup(), cube(), grouping sets()
+- 윈도우함수 : 
+   .순위함수(rank() over 정렬))
+   .행순서함수 - lead(), lag()
+   .ntile() - 등급분류 : 주어진 수만큼 행들을 n등분한후
+                            현재행에 해당하는 등급을 구하는 함수
+
+
+CSS
+텍스트, 목록 스타일, 문단(왼쪽, 오른쪽, 가운데)
+1. 내부 스타일 - <style>
+2. 외부 스타일 - .css 파일 <link>
+3. 인라인 스타일 
+
+문단(왼쪽, 오른쪽, 가운데)
+text-align: left, right, center
+
+표 태그 - <table>
+도형, 객체의 속성 
+사각형, 테이블, 원
+박스(Box Model) 238p
+- width, height
+여백 - margin(바깥쪽여백), padding(안쪽여백)
+
+
+<div> - 개체나 섹션(영역)을 구분하는 태그, css 스타일 적용
+	하기 위해 필요함
+<span>
+
+<div>
+   헤더(header) 영역
+</div>
+<div>
+   바디(contents) 영역
+</div>
+<div>
+   푸터(footer) 영역
+</div>
+
+선택자
+1. 태그 선택자
+2. class 선택자 - 접주어(prefix)로 점(.)으로 시작
+3. id 선택자 - 접두어(prefix)로 샾(#)으로 시작
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+text-align:center;/* 셀의 수평 정렬 */
+* 셀의 수직 정렬 */
+            .va1{vertical-align: top;/*위쪽*/}
+            .va2{vertical-align: middle;/*가운데*/}
+            .va3{vertical-align: bottom;/*아래쪽*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

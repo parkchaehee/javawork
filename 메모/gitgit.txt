@@ -1,17 +1,22 @@
 변경후 저장할때
 cd c:/javaworks
+cd c:/sqlworks
+cd c:/htmlworks
+
 git add .
-git commit -m "interface"
+git commit -m "10.31화"
 git push
 =================
 파일 다운받을때
 -처음 한번만 clone
 1. cd c:/javaworks(다운받을 폴더)
 cd c:/sqlworks
+cd c:/htmlworks
 2. git clone 리포지터리 주소복붙
----http://github.com/kiyongee2/javawork.git
-https://github.com/kiyongee2/sqlwork.git
-https://github.com/kiyongee2/sqlwork.git
+git clone http://github.com/kiyongee2/javawork.git
+git clone https://github.com/kiyongee2/sqlwork.git
+git clone https://github.com/kiyongee2/htmlwork.git
+
 -두번째부터는
 3. git pull
 

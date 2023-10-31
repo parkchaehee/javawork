@@ -6,14 +6,14 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class FlowLayoutTest {
-	
+
 	public static void main(String[] args) {
-		//FlowLayout - 왼쪽에서 오른쪽으로 배치(한 줄)
+		// FlowLayout - 왼쪽에서 오른쪽으로 배치(한 줄)
 		JFrame frame = new JFrame("레이아웃 예제");
-		frame.setSize(400, 100);
-		frame.setLocation(200, 100); //위치
+		frame.setSize(400, 100); 
+		frame.setLocation(200, 100);
 		
-		//레이아웃 배치
+		//레이 아웃 배치
 		//FlowLayout layout = new FlowLayout();
 		frame.setLayout(new FlowLayout());
 		
@@ -26,7 +26,6 @@ public class FlowLayoutTest {
 		//디스플레이
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		
 	}
 
 }

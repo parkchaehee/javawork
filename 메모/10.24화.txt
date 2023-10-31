@@ -1,0 +1,110 @@
+web - world wide web
+www.naver.com
+hypertext transper protocol
+
+사람 - 세포
+web - 웹페이지(웹사이트, 홈페이지)
+웹페이지 만드는 언어 
+- 클라이언트 측 언어(Client Side Language) :  HTML, CSS, JavaScript
+- 서버 측 언어(Server Side Language) : Java(Jsp), Python, C#(.net), PHP
+
+html 창시자 - 팀버너스리(웹의 아버지), 영국
+하이퍼텍스트 - cern(유럽 입자 물리연구소), 데이터 관리
+www(w3c) 창립, http 최초 설계
+
+웹 브라우주 - 크롬, 익스플로러, 사파리
+최초의 웹 브라우저 - 모자이크(마크안드레센, 멀티미디어) > 네스케이프
+ > 파이어폭스(리눅스)
+
+html(hypertext markup language)
+ - 태그(tag) 명령어 
+
+웹 페이지(Page)
+<head> - 제목(머리말)
+
+    <title> 처음 만드는 웹페이지</title>
+</head>
+<body> - 본문
+    <h1>환영합니다. 홍페이지 방문을 환영합니다.</h1>
+    <img src="car.jpg">
+</body>
+
+.java > .class
+.txt - 텍스트파일
+.html - 웹페이지
+
+w3Schools.com
+
+web site 제작
+web application
+
+소스코드편집기 - VS code: Visual Studio Code
+
+HTML4 > HTML5
+
+** tag의 특징
+1. 시작태그와 종료 태그의 쌍으로 이루어짐
+<html></html>, <h1></h1>
+2. 단독 형태의 태그
+  <br>, <img>
+3. 속성을 가진 태그
+  <img src="" alt"">
+
+
+** 구조 관련 태그
+<html>, <head>, <body>
+
+
+** 텍스트 관련 태그 **
+<p>, <b>, <i>, <br>, <h1>
+
+** 목록관련태그 **
+<ul> --> unordered list
+   <li></li>
+   <li><li>
+</ul>
+
+<ol> ->orderlist(1,2,a,)
+<li> java </li>
+</ol>
+
+가로 : 600px - 고정크기
+         60% - 상대크기
+
+캡션 - 사진, 표에 대한 설명
+<img> <figure>
+
+
+자바 윈도우 프로그래밍
+
+- 일반 방식
+- 상속 방식
+
+JComboBox 클래스 - 목록메뉴
+계산기 - 정수, 실수 
+
+getText();
+getSelectedItem(); - 목록선택
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

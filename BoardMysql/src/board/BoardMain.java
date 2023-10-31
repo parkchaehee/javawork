@@ -31,6 +31,7 @@ public class BoardMain {
 		}
 	}
 	
+	//게시글 목록
 	public void list() {
 		System.out.println();
 		System.out.println("[게시글 목록]");
@@ -50,7 +51,6 @@ public class BoardMain {
 				board.setBwriter(rs.getString("bwriter"));
 				board.setBdate(rs.getTimestamp("bdate"));
 				board.setBtitle(rs.getString("btitle"));
-				//board.setBcontent(rs.getString("bcontent"));
 				
 				//게시글 출력
 				System.out.printf("%-4s%-12s%-30s%-30s \n", 
@@ -58,7 +58,6 @@ public class BoardMain {
 						board.getBwriter(),
 						board.getBdate(),
 						board.getBtitle()
-						//board.getBcontent()
 				);
 			}//while 끝
 			rs.close();
@@ -110,7 +109,7 @@ public class BoardMain {
 		//db 작업 - insert
 		try {
 			String sql = "INSERT INTO board(btitle, bcontent, bwriter) "
-					+ "VALUES ( ?, ?, ?)";
+					+ "VALUES (?, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, board.getBtitle());  //콘솔에서 입력한 제목을 db에 저장
 			pstmt.setString(2, board.getBcontent());

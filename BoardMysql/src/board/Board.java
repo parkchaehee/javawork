@@ -13,7 +13,6 @@ public class Board implements Serializable{
 	private String bwriter;
 	private Timestamp bdate;
 	
-	
 	public int getBno() {
 		return bno;
 	}
