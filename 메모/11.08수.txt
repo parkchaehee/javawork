@@ -1,0 +1,42 @@
+반응형 웹 - cafe12
+
+첫화면(메인)
+https://www.naver.com/index.html
+resources(자원) - css, js, images
+
+변수선언 var, let - let + 변수이름 = 변수값
+ let num = 10;
+ let ch = 'A'
+ let name = "홍길동"
+
+번역기
+자바스크립트, 파이썬 - 인터프리터: 한줄씩 번역
+자바, c언어 - 컴파일러: 통번역
+
+연산자
+산술 - /*-+
+비교 - 
+논리 - 
+조건 -> 조건 ? 참 : 거짓
+
+
+DOM(Document Of Model)
+ 출력 - alert()
+입력 - prompt()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

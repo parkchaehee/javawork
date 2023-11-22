@@ -1,0 +1,75 @@
+배치 - css 포지셔닝
+브라우저 화면 안에서 콘텐츠 영역을 어떻게 배치할지 결정
+
+display : 수평(일렬), 수직배치
+float : 수평(요소 독립성 - 왼쪽, 오른쪽) 떠있는(부동)
+ left, right,
+clear: left, right, both
+레이아웃 배치 - float 
+position : 독립 배치
+
+
+2.알디스크
+
+
+구글웹폰트
+1. html - <link>
+2. css - import
+
+
+
+- 웹 서버 임대(호스팅), 도메인 등록대행
+
+웹사이트 운영
+1. 도메인 주소(www.mysite.co.kr) - 1년 11000원
+2. 웹 호스팅 - 1년 50000원
+
+cafe24
+고도몰
+닷홈
+클라우드 - 네이버, AWS
+
+
+css 선택자 - class, id
+전체 선택자 - *
+그룹 선택자 - ,
+연결 선택자 - 하위선택자(공백문자), 자식선택(>), +(형제요소선택)
+속성 선택자 - 태그[속성=속성값]
+가상 선택자 - 지정하기 어려운 웹 요소
+
+
+box-sizing : content-box(계산포함)
+box-sizing : border-box
+테두리, 패딩이 계산
+
+display
+float
+position : 
+웹문서안에 요소들을 자유자재로 배치하기 위한 속성
+relative, absolute, fixed
+left(x좌표), top(y좌표)
+ - 브라우저 기준으로 배치 : absolute
+ - 부모 박스 기준으로 상대위치 배치
+   - 부모: position: relative
+   - 자식: position: absolute
+fixed - 브라우저 기준으로 배치함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

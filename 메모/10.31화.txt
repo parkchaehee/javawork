@@ -27,7 +27,10 @@ text
 메모 - <textarea>
 
 
+행순서 관련함수
 
+case when
+decode()
 
 
 

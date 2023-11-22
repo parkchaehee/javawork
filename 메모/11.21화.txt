@@ -1,0 +1,130 @@
+java class
+
+xml -  데이터 생성, 전달 표준 언어 ->json
+xml은 사용자 임의로 만들수 있고, 필요한 정보를 주거나 받을수
+있는 데이터  형태를 제공한다.
+<jsp:useBean>구문</jsp:useBean>
+<car>
+  <brand>Avante</brand>
+  <color>Silver</color>
+</car>
+
+json방식
+{
+  "brand" : "Avante"
+  "color" : "Silver"
+}
+
+html
+<body></body>
+
+forward - 포워딩(페이지는 이동하지만
+                       url 경로는 자신의 파일을 유지)
+<jsp:forward page=""></jsp:forward>
+<jsp:forward page="" />
+
+빈 - 클래스의 객체
+Menber member = new Member();
+<jsp:useBean id="member" class="bean.Member"> 
+
+jsp의 주요 내장 객체
+out(출력)
+request(요청, 저장) - 웹 브라우저에서 서버의 
+		jsp페이지로 전달하는 정보를 저장함
+ - request.getPerameter(폼의 name 속성)
+ - request.getPerameterValues(폼의 name 속성) - 배열형태로 전달받음
+
+
+http://localhost:8080/jwbook/request/process.jsp?uname=박채희
+get방식					?는 쿼리스트링
+
+response(응답) - 요청을 처리한 결과를 서버에서
+		 웹브라우저로 전달하는 정보를 저장함
+response.sendRedirect(페이지)
+response.setContentType(text/html; json/application;) : 브라우저로 데이터 전달
+
+jsp -> jsp
+loginForm.jsp -> process.jsp
+
+jsp -> servlet
+loginForm.jsp -> /jwbook/login
+
+
+Servlet -> ServletConfig(service) -> HttpServelt(doGet, doPost)
+
+display
+float
+position
+
+flex(플렉스) - 플렉스 박스 레이아웃
+display: flex
+ - 수평이나 수직 방향 중 하나를 주축으로 정하고 박스를 배치
+ - 여유공간이 생길경우 너비나 높이를 적절하게 늘리거나 줄일수있다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mysql
+비주얼코드
+이클립스
+오라클sql
+파일젤라
+아파치 톰캣(이클립스랑 연동(java EE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

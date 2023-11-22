@@ -1,0 +1,106 @@
+jsp(java server pages - ja)
+1. jdk - 8, 11버전(java -version)
+2. 이클립스(java ee설치)
+3. 웹 서버(WAS) - 톰캣(tomcat)
+
+
+웹 애플리케이션
+html 태그
+<style>
+   css언어
+</style>
+
+<% 
+    자바언어(서버 언어) 
+%>
+
+<script>
+  javascript 언어
+</script>
+
+스트링부트 - 프레임워크(sts-IDE)
+
+
+JSP 태그
+디렉티브 태그 - 지시자
+<%@ page import="" errorPage="" %>
+<%@ include file="파일명" %>
+
+출력문 태그 - expression
+<%= %>
+
+스크립트릿 태그 - scriptlet
+<% %>
+
+euc-kr -> utf-8
+프로젝트 이름 : 컨텍스트(context)
+http://localhost:8080/jwbook/hello.jsp
+
+정적파일 - resource:  css, image, js파일
+동적파일 - jsp
+
+http 코드
+200 - 성공
+404 - 파일이 없어서 에러발생
+500 - 코드 오류
+
+오라클 - jdk11
+openjdk11
+서블릿(servlet) > Jsp
+MVC 패턴
+M - oracle, mysql
+V - jsp
+C - serclet
+
+
+$(태그선택, id, 클래스).css()
+.text(), val(), html()
+
+위치탐색
+.children() - 자식요소 선택
+.parent() - 부모요소 선택
+.next() - 선택요소의 다음요소
+.find(태그) - 하위 요소 찾아서 선택
+
+스크롤 관련
+scrollTop() - 스크롤의 가장 y좌표 값을 가져옴
+scrollTop(100px) - 스크롤값을 100px로 정함
+scrollLeft() - 스크롤의 가장 x좌표 값을 가져옴
+scrollLeft(100px) - 스크롤값을 100px로 정함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

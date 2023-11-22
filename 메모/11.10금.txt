@@ -1,0 +1,107 @@
+객체지향언어
+함수(function) = 메서드(method)
+자바스크립트
+1.return이 없는함수
+function 함수이름(){
+  실행문
+}
+
+let 변수 = function(){
+ 실행문
+}
+호출
+변수()
+
+2.return이 있는 함수
+function 함수이름(){
+  실행문
+  return 구문, 변수
+}
+
+함수사용 = 호출
+함수이름()
+
+입력 
+- prompt()
+- 함수의 매개변수
+
+var
+let
+const
+
+document.write();
+document.getElementById("id 선택자")
+- 특정한 위치를 선택해서 출력
+
+속성
+innerHTML
+style.color = 'blue';
+
+배열(Array)
+변수 - 1개 값
+배열 - 여러 개 값
+
+자료형 - 수
+n1, n2, n3 ----
+흩어져 있음, 이름이 여러개라 관리가 어려움
+
+이름[ ] n;
+메모리공간 크기(3개) - 이름1개, 같은곳에 위치
+n[0]
+n[1]
+
+1. String[ ] 배열이름 = { };  //자바
+2. String[ ] 배열이름 = new String[3];
+
+for(자료형 변수 : 배열이름){
+  println(변수)
+}
+
+
+자바스크립트
+let 배열이름 = ['a', 'b', 'c']
+let 배열이름 = new Array[3]
+
+for(let 변수 in 배열이름){
+  console.log(배열이름[변수])
+}
+
+//for in 문
+for(let i in animal){
+  
+}
+
+
+절대값
+Math.abs(-3) => 3
+
+함수 정의
+
+getElementById().style.backgroundColor = "blue"
+getElementById().style.display = "none"
+getElementById().style.display = "block"
+
+15일 수
+- 요구사항 확인: HTML, CSS
+- 애플리케이션 설계 : HTML, CSS, javascript
+
+21일 화 - 취업지원 프로세스
+직무설명회 : 1시 30분
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

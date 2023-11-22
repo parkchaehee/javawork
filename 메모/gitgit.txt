@@ -2,9 +2,10 @@
 cd c:/javaworks
 cd c:/sqlworks
 cd c:/htmlworks
+cd c:/jsworks
 
 git add .
-git commit -m "10.31화"
+git commit -m "11.15.수"
 git push
 =================
 파일 다운받을때
@@ -12,10 +13,14 @@ git push
 1. cd c:/javaworks(다운받을 폴더)
 cd c:/sqlworks
 cd c:/htmlworks
+cd c:/jsworks
+cd c:/jspworks
 2. git clone 리포지터리 주소복붙
 git clone http://github.com/kiyongee2/javawork.git
 git clone https://github.com/kiyongee2/sqlwork.git
 git clone https://github.com/kiyongee2/htmlwork.git
+git clone https://github.com/kiyongee2/jswork.git
+git clone https://github.com/kiyongee2/jspwork.git
 
 -두번째부터는
 3. git pull
@@ -27,7 +32,7 @@ cd c:/sqlworks
 git status
 git init
 git add .
-git commit -m "sql source"
+git commit -m "jsp source"
 git branch
 git branch -M main
 git branch
